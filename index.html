@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Christmas Khushi jii</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <audio id="bgMusic" loop>
+        <source src="https://www.bensound.com/bensound-music/bensound-romantic.mp3" type="audio/mpeg">
+    </audio>
+
+    <div id="app">
+        <section id="screen1" class="screen active">
+            <div class="heart-bg"></div>
+            <p class="greeting">For Someone Extra Special...</p>
+            <div class="gift-container" onclick="startApp()">
+                <span class="tap-me">Tap to Open</span>
+                <img src="https://cdn-icons-png.flaticon.com/512/1139/1139982.png" alt="Gift" class="gift-icon">
+            </div>
+        </section>
+
+        <section id="screen2" class="screen">
+            <img src="https://cdn-icons-png.flaticon.com/512/2334/2334757.png" alt="Snowman" class="snowman-icon">
+            <h2>Happy Christmas, Khushi jii! 🎄</h2>
+            <p>I have a little something to show you...</p>
+            <button onclick="nextScreen(3)">Let's See</button>
+        </section>
+
+        <section id="screen3" class="screen">
+            <h3>Reasons you're my favorite gift...</h3>
+            <div class="card-grid">
+                <div class="card" onclick="revealCard(this)">
+                    <img src="https://i.ibb.co/YTwYXxMC/Whats-App-Image-2025-12-25-at-11-23-20-AM.jpg" class="gf-img">
+                    <span>Your Smile</span>
+                </div>
+                <div class="card" onclick="revealCard(this)">
+                    <img src="https://i.ibb.co/Tx1JMJJC/Whats-App-Image-2025-12-25-at-11-23-21-AM-1.jpg" class="gf-img">
+                    <span>Your Kindness</span>
+                </div>
+                <div class="card" onclick="revealCard(this)">
+                    <img src="https://i.ibb.co/PGkZGFp7/Whats-App-Image-2025-12-25-at-11-23-21-AM.jpg" class="gf-img">
+                    <span>Your Sparkle</span>
+                </div>
+            </div>
+            <button id="final-btn" class="hidden" onclick="nextScreen(4)">Click for a Message</button>
+        </section>
+
+        <section id="screen4" class="screen">
+            <div class="letter-box">
+                <h2>Merry Christmas, Khushi jii ❤️</h2>
+                <div class="scrolling-text">
+                    <p>To my most beautiful Khushi,</p>
+                    <p>You aren't just a part of my life; you are the reason behind my happiest moments and my widest smiles. This Christmas, I don't need any gifts because I already have you.</p>
+                    <p>I promise to always be there for you, through every laugh and every silly thought. Thank you for being exactly who you are.</p>
+                    <p><strong>I love you forever! 🎄✨</strong></p>
+                </div>
+                <p class="signature">Forever Yours,</p>
+            </div>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
